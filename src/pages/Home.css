@@ -1,6 +1,14 @@
+.EN {
+    font-family: "Inter", sans-serif;
+}
+
+.JP {
+    font-family: "Noto Sans JP", sans-serif;
+}
+
 .topMain {
     height: 100vh;
-    background-color: #969DC9;
+    background-color: #9DA5D7;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,6 +30,7 @@
     color: #d8c75c;
     margin-top: -30px;
     font-family: "Noto Sans JP", sans-serif;
+    text-shadow: 0 0 5px #aaaa00;
 }
 
 .teamNum {
@@ -30,6 +39,7 @@
     color: #d8c75c;
     margin-top: -30px;
     margin-left: 20px;
+    text-shadow: 0 0 5px #aaaa00;
 }
 
 .blueSpan {
@@ -42,6 +52,166 @@
     margin-top: -30px;
 }
 
-.mainContent {
-    height: 100vh;
+.news {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #C9CDE3;
+}
+
+.newsTitleContainer {
+    width: 80%;
+    height: 100px;
+    border-bottom: 2px solid #3E4679;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+}
+
+.newsTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #3E4679;
+}
+
+.newsContainer {
+    width: 80%;
+}
+
+.newsContainer:hover {
+    font-weight: 500;
+    background-color: #9DA5D7;
+}
+
+.newsColumn {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    font-size: 1.2rem;
+    height: 3rem;
+    align-items: center;
+    border-bottom: 2px solid #3E4679;
+}
+
+.columnDate>p {
+    width: 100%;
+    text-align: center;
+    color: #3E4679;
+}
+
+.intro {
+    background-color: #C9CDE3;
+    background-size: 40px 40px;
+    background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px);
+}
+
+.introTitle {
+    font-weight: 550;
+    font-size: 4.5rem;
+    text-align: left;
+    padding: 50px 0 0 150px;
+    margin-bottom: -20px;
+}
+
+.introSub {
+    font-weight: 600;
+    font-size: 1.8rem;
+
+    color: #3E4679;
+    padding-bottom: 30px;
+}
+
+.introSub.EN {
+    padding-left: 150px;
+}
+
+.layoutContainer1 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-gap: 30px;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.textContainer>p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 40px 20px;
+}
+
+.textContainer>h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0 20px;
+}
+
+.moreButtonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.moreButton {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 10px;
+    background-color: #9DA5D7;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    color: #3E4679;
+}
+
+@keyframes hoverFill {
+
+    100% {
+        background-color: #3E4679;
+        color: #d8c75c;
+    }
+}
+
+.moreButton:hover {
+    animation: hoverFill 300ms ease-in-out forwards;
+}
+
+.imageContainer {
+    display: flex;
+    align-items: center;
+}
+
+.imageContainer>img {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.aboutFtc {
+    background-color: #e7d9a0;
+    background-size: 40px 40px;
+    background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px);
+}
+
+.ftcTitle {
+    font-weight: 550;
+    font-size: 4.5rem;
+    text-align: right;
+    padding: 50px 150px 0 0;
+    margin-bottom: -20px;
+}
+
+.ftcSub {
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-align: right;
+    color: #3E4679;
+    padding-bottom: 30px;
+    padding-right: 150px;
 }

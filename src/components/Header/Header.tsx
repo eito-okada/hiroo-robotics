@@ -30,6 +30,7 @@ const UnderlineText: React.FC<AnimationTextProps> = ({ children, delayMs }) => {
     const textContainerStyle: React.CSSProperties = {
         position: "relative",
         display: "inline-block",
+        height: "min-content",
     };
 
     const underlineStyle: React.CSSProperties = {
@@ -55,14 +56,16 @@ const UnderlineText: React.FC<AnimationTextProps> = ({ children, delayMs }) => {
 export default function Header() {
     return (
         <div className={styles.header}>
-            <div className={styles.logo}>
-                <img src="./logo.png" alt="" />
-            </div>
-            <UnderlineText delayMs={0}>
-                <div className={styles.title}>
-                    <span className={styles.blueSpan}>HIROO</span> ROBOTICS
+            <a href="./" className={styles.logoTitleHolder}>
+                <div className={styles.logo}>
+                    <img src="./logo.png" alt="" />
                 </div>
-            </UnderlineText>
+                <UnderlineText delayMs={0}>
+                    <div className={styles.title}>
+                        <span className={styles.blueSpan}>HIROO</span> ROBOTICS
+                    </div>
+                </UnderlineText>
+            </a>
             <div className={styles.navList}>
                 <div className={styles.navItem}>
                     <a href="./">
@@ -71,12 +74,19 @@ export default function Header() {
                 </div>
                 <div className={styles.navItem}>
                     <a href="./">
-                        <p>FTCとは</p>
+                        <p>
+                            <span className={styles.spanEN}>FTC</span>とは
+                        </p>
+                    </a>
+                </div>
+                <div className={styles.navItem}>
+                    <a href="./about-us">
+                        <p>チームについて</p>
                     </a>
                 </div>
                 <div className={styles.navItem}>
                     <a href="./">
-                        <p>チームについて</p>
+                        <p>お知らせ</p>
                     </a>
                 </div>
                 <div className={styles.navItem}>
