@@ -1,0 +1,45 @@
+.header {
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    background-color: #C9CDE3;
+}
+
+.logo {
+    height: 100%;
+    margin-left: 50px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.logo>img {
+    height: 60%;
+}
+
+.title {
+    font-size: 1.8rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    margin-left: 15px;
+    /* color: #3E4679; */
+}
+
+.blueSpan {
+    /* gold color: #AFA056; */
+    color: #3E4679;
+}
+
+.navList {
+    position: absolute;
+    right: 30px;
+    display: flex;
+}
+
+.navItem {
+    font-family: "Noto Sans JP", sans-serif;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-right: 30px;
+}
