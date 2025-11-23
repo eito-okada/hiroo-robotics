@@ -1,0 +1,47 @@
+.topMain {
+    height: 100vh;
+    background-color: #969DC9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Inter", sans-serif;
+    padding-top: 10vh;
+}
+
+.teamStuff {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.teamMotto {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #d8c75c;
+    margin-top: -30px;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.teamNum {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #d8c75c;
+    margin-top: -30px;
+    margin-left: 20px;
+}
+
+.blueSpan {
+    color: #3E4679;
+}
+
+.teamName {
+    font-size: 7rem;
+    font-weight: 700;
+    margin-top: -30px;
+}
+
+.mainContent {
+    height: 100vh;
+}

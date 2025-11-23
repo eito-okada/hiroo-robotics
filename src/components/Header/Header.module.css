@@ -1,8 +1,14 @@
 .header {
     height: 12vh;
+    width: 100%;
     display: flex;
     align-items: center;
-    background-color: #C9CDE3;
+    background-color: rgba(201, 205, 227, 0.5);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    backdrop-filter: blur(3px);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .05);
 }
 
 .logo {
@@ -34,6 +40,7 @@
     position: absolute;
     right: 30px;
     display: flex;
+    height: 50%;
 }
 
 .navItem {
@@ -41,5 +48,42 @@
     text-align: center;
     font-size: 1.1rem;
     font-weight: 400;
-    margin-right: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+@keyframes hoverFill {
+    from {
+        font-weight: 400;
+    }
+
+    to {
+        background-color: #3E4679;
+        font-weight: 600;
+        color: #d8c75c;
+    }
+}
+
+.navItem:hover {
+    animation: hoverFill 300ms ease-in-out forwards;
+}
+
+.navItem::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #d8c75c;
+    transition: width 0.3s ease;
+}
+
+.navItem:hover::after {
+    width: 100%;
 }

@@ -1,4 +1,56 @@
+import { useState, useEffect } from "react";
 import styles from "./Header.module.css";
+
+interface AnimationTextProps {
+    children: React.ReactNode;
+    delayMs: number;
+}
+
+const UnderlineText: React.FC<AnimationTextProps> = ({ children, delayMs }) => {
+    const [underlineWidth, setUnderlineWidth] = useState(0);
+    const [underlineOrigin, setUnderlineOrigin] = useState("left");
+
+    useEffect(() => {
+        const startGrowthTimer = setTimeout(() => {
+            setUnderlineOrigin("left");
+            setUnderlineWidth(1);
+        }, 100 + delayMs);
+
+        const startShrinkTimer = setTimeout(() => {
+            setUnderlineOrigin("right");
+            setUnderlineWidth(0);
+        }, 800 + delayMs);
+
+        return () => {
+            clearTimeout(startGrowthTimer);
+            clearTimeout(startShrinkTimer);
+        };
+    }, [delayMs]);
+
+    const textContainerStyle: React.CSSProperties = {
+        position: "relative",
+        display: "inline-block",
+    };
+
+    const underlineStyle: React.CSSProperties = {
+        position: "absolute",
+        bottom: "0px",
+        left: "12px",
+        width: "95%",
+        height: "2px",
+        backgroundColor: "#3E4679",
+        transform: `scaleX(${underlineWidth})`,
+        transformOrigin: underlineOrigin,
+        transition: `transform 500ms ease-in-out`,
+    };
+
+    return (
+        <div style={textContainerStyle}>
+            {children}
+            <div style={underlineStyle} />
+        </div>
+    );
+};
 
 export default function Header() {
     return (
@@ -6,9 +58,11 @@ export default function Header() {
             <div className={styles.logo}>
                 <img src="./logo.png" alt="" />
             </div>
-            <div className={styles.title}>
-                <span className={styles.blueSpan}>HIROO</span> ROBOTICS
-            </div>
+            <UnderlineText delayMs={0}>
+                <div className={styles.title}>
+                    <span className={styles.blueSpan}>HIROO</span> ROBOTICS
+                </div>
+            </UnderlineText>
             <div className={styles.navList}>
                 <div className={styles.navItem}>
                     <a href="./">
@@ -17,7 +71,7 @@ export default function Header() {
                 </div>
                 <div className={styles.navItem}>
                     <a href="./">
-                        <p>FTCとは？</p>
+                        <p>FTCとは</p>
                     </a>
                 </div>
                 <div className={styles.navItem}>
