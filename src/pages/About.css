@@ -1,0 +1,246 @@
+.topBanner {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10vh;
+    background-color: #9DA5D7;
+}
+
+.bannerTitle {
+    font-size: 4.5rem;
+    font-weight: 550;
+}
+
+.bannerSub {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: -20px;
+    color: #3E4679;
+}
+
+.fullWidthContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: #9DA5D7;
+}
+
+.boardBack {
+    background-size: 40px 40px;
+    background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px);
+}
+
+.gridBack {
+    background-color: #c9cde3;
+    background-size: 30px 30px;
+    background-image:
+        linear-gradient(to right, #888 0.5px, transparent 0.5px),
+        linear-gradient(to bottom, #888 0.5px, transparent 0.5px);
+}
+
+
+.fullWidthContainer>p {
+    max-width: 80%;
+    font-size: 1.2rem;
+}
+
+strong {
+    font-weight: 600;
+}
+
+.contentGridContainer1Row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+.heading {
+    font-size: 3rem;
+    font-weight: 650;
+}
+
+.subHeading {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #3E4679;
+    margin: -10px 0 20px 0;
+}
+
+.smallYellowContent {
+    min-height: 120px;
+    background-color: #d8c75c;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.smallYellowContent>p {
+    max-width: 90%;
+    text-align: center;
+    padding: 20px;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.heading.JP {
+    padding-bottom: 20px;
+}
+
+
+
+.smallHeading {
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 20px 20px 0 20px;
+}
+
+.mediumContent {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+
+.lightBack {
+    background-color: #c9cde3;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.mediumContentImg {
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.members {
+    background-color: #e7d9a0;
+}
+
+
+.teamGrid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.team-card {
+    border-radius: 1rem;
+}
+
+.card-leader {
+    background-color: #c7d2fe;
+    box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    font-weight: 600;
+}
+
+.card-leader-layout {
+    grid-column: span 1;
+}
+
+@media (min-width: 768px) {
+    .card-leader-layout {
+        grid-column: span 1 / span 1;
+    }
+
+    .leader-section .teamGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .teamGrid.core-team-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .teamGrid.core-team-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+@media (max-width: 767px) {
+    .card-content-member {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.card-member {
+    background-color: #c9cde3;
+    box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+}
+
+.card-content-member {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.card-content-leader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.profile-image {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 9999px;
+    object-fit: cover;
+    border-width: 4px;
+    margin-bottom: 0.5rem;
+}
+
+.image-leader {
+    border-color: white;
+}
+
+.image-member {
+    border-color: #4f46e5;
+}
+
+.name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 0.25rem;
+}
+
+.title {
+    background-color: #7570d5;
+    font-weight: 600;
+    color: #d8c75c;
+    padding: 10px;
+    width: max-content;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.bio {
+    font-size: 1rem;
+    font-weight: 700;
+
+}
+
+.card-leader .bio {
+    color: #3E4679;
+}
+
+.card-member .bio {
+    color: #3E4679;
+}

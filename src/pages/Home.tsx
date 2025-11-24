@@ -34,9 +34,11 @@ export default function Home() {
         <>
             <Header />
             <main>
-                <div className="topMain">
+                <div className="topMain EN">
                     <FadeInText delayMs={0}>
-                        <h3 className="teamMotto">STEM教育から、未来を創る</h3>
+                        <h3 className="teamMotto JP">
+                            <span className="EN">STEM</span>教育から、未来を創る
+                        </h3>
                     </FadeInText>
 
                     <FadeInText delayMs={300}>
@@ -46,6 +48,23 @@ export default function Home() {
                             </h1>
                             <h3 className="teamNum">#32682</h3>
                         </div>
+                    </FadeInText>
+
+                    <FadeInText delayMs={600}>
+                        <svg
+                            fill="#000000"
+                            width="30px"
+                            viewBox="0 0 24 24"
+                            id="down-arrow"
+                            data-name="Flat Color"
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="arrow"
+                        >
+                            <path
+                                id="primary"
+                                d="M15.71,17.29a1,1,0,0,0-1.42,0L13,18.59V3a1,1,0,0,0-2,0V18.59l-1.29-1.3a1,1,0,0,0-1.42,1.42l3,3a1,1,0,0,0,1.42,0l3-3A1,1,0,0,0,15.71,17.29Z"
+                            ></path>
+                        </svg>
                     </FadeInText>
                 </div>
                 <div className="news">

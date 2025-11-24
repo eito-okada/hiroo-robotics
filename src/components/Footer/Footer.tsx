@@ -15,7 +15,7 @@ export default function Footer() {
                     </a>
                 </div>
                 <div className={styles.link}>
-                    <a href="./" className={styles.JP}>
+                    <a href="./about-us" className={styles.JP}>
                         チームについて
                     </a>
                 </div>
