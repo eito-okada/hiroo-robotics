@@ -6,6 +6,7 @@ footer {
     display: grid;
     grid-template-columns: 4fr 1fr;
     align-items: center;
+    font-family: "Inter", "Noto Sans JP", sans-serif;
 }
 
 .links {
@@ -19,14 +20,6 @@ footer {
 
 .link:hover {
     font-weight: 600;
-}
-
-.JP {
-    font-family: "Noto Sans JP", sans-serif;
-}
-
-.EN {
-    font-family: "Inter";
 }
 
 .sns {

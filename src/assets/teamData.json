@@ -5,15 +5,15 @@
         "title": "チームリーダー",
         "isLeader": true,
         "bio": "工学が好き！とロボコンをやってみたい！という思いで今回チームを作ってみました。頑張ります。",
-        "imageUrl": "./placeholder.jpg"
+        "imageUrl": "./shuma.JPG"
     },
     {
         "id": 2,
         "name": "Ryota Kamikura",
         "title": "財務PR",
-        "isLeader": false,
+        "isLeader": true,
         "bio": "脳神経科学と分子生物学あたりが本職の人間です。",
-        "imageUrl": "./placeholder.jpg"
+        "imageUrl": "./ryota.JPG"
     },
     {
         "id": 3,
@@ -21,15 +21,15 @@
         "title": "ソフトリーダー、財務PR",
         "isLeader": true,
         "bio": "航空宇宙工学に興味があり、普段はウェブサイト作成や人工衛星の開発など、いろいろな分野に首を突っ込んでいる暇人です。このウェブサイトも僕が作りました。",
-        "imageUrl": "./placeholder.jpg"
+        "imageUrl": "./eito.JPG"
     },
     {
         "id": 4,
         "name": "Hibiki Narita",
         "title": "ハード",
         "isLeader": false,
-        "bio": "幼い頃から宇宙に興味があり、現在は航空宇宙工学に強い関心を持っています。普段は人工衛星の開発や固体電池の研究に取り組んでいます。",
-        "imageUrl": "./placeholder.jpg"
+        "bio": "幼い頃から宇宙に興味があり、航空宇宙工学に強い関心を持っていました。普段は人工衛星の開発や固体電池の研究に取り組んでいました。",
+        "imageUrl": "./hibiki.png"
     },
     {
         "id": 5,
@@ -53,7 +53,7 @@
         "title": "ハード",
         "isLeader": false,
         "bio": "元ビジネス志望、ロボコンに出まくったらエンジニアとしての楽しみを知って工学に興味が沸いた人です。",
-        "imageUrl": "./placeholder.jpg"
+        "imageUrl": "./kanta.JPG"
     },
     {
         "id": 8,
@@ -61,15 +61,15 @@
         "title": "ハードリーダー",
         "isLeader": true,
         "bio": "工学系で特に設計に興味あって、大体暇な時は漫画読むか寝るかCADいじるかしてます",
-        "imageUrl": "./placeholder.jpg"
+        "imageUrl": "./rei.JPG"
     },
     {
         "id": 9,
         "name": "Joe Kurosu",
         "title": "財務PRリーダー",
-        "isLeader": true,
-        "bio": "",
-        "imageUrl": "./placeholder.jpg"
+        "isLeader": false,
+        "bio": "足が長いことしか取り柄がありません。",
+        "imageUrl": "./joe.JPG"
     },
     {
         "id": 10,
@@ -77,46 +77,38 @@
         "title": "ソフト",
         "isLeader": false,
         "bio": "経済学とITを合体したことを将来やろうとしている、普段競技プログラムや趣味でプログラム作っている人",
-        "imageUrl": "./placeholder.jpg"
+        "imageUrl": "./reito.JPG"
     },
     {
         "id": 11,
-        "name": "Keiho Satake",
-        "title": "ハード",
-        "isLeader": false,
-        "bio": "物を作るのが好きで、子供の頃は木工をしていた。そこからロボットに興味を持ち始めた。",
-        "imageUrl": "./placeholder.jpg"
-    },
-    {
-        "id": 12,
         "name": "Taiga Miyazaki",
         "title": "ハード",
         "isLeader": false,
         "bio": "化学と工学に興味があり機械が好き。固体電池の研究やステージオペ、運動などいろんなことに手を出している。",
-        "imageUrl": "./placeholder.jpg"
+        "imageUrl": "./taiga.JPG"
     },
     {
-        "id": 13,
+        "id": 12,
         "name": "Shiyu Sano",
         "title": "ハード、財務PR",
         "isLeader": false,
         "bio": "理系が得意だから自然とSTEMに惹かれました。実体を持つ創作物が好きなので、一から何かを作りたくて参加しました。",
-        "imageUrl": "./placeholder.jpg"
+        "imageUrl": "./shiyu.JPG"
     },
     {
-        "id": 14,
+        "id": 13,
         "name": "Kafu Yoshida",
         "title": "デザイン",
         "isLeader": false,
         "bio": "工学系とアートなどのもの作りに興味があり美術部部長をしている。将来の目標は自分の発明品で世界の問題を解決することである。",
-        "imageUrl": "./placeholder.jpg"
+        "imageUrl": "./kafu.JPG"
     },
     {
-        "id": 15,
+        "id": 14,
         "name": "Rona Sando",
         "title": "ソフト",
         "isLeader": false,
         "bio": "",
-        "imageUrl": "./placeholder.jpg"
+        "imageUrl": "./rona.png"
     }
 ]

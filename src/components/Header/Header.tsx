@@ -73,10 +73,8 @@ export default function Header() {
                     </a>
                 </div>
                 <div className={styles.navItem}>
-                    <a href="./">
-                        <p>
-                            <span className={styles.spanEN}>FTC</span>とは
-                        </p>
+                    <a href="./about-ftc">
+                        <p>FTCとは</p>
                     </a>
                 </div>
                 <div className={styles.navItem}>
